@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background-color: #161f2c;
+    color: #fff;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    min-height: 100vh;
+
+    /* CENTRALIZA TUDO NO MEIO DA TELA */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HEADER CENTRALIZADO */
+header {
+    background-color: #161b22;
+    display: flex;
+    justify-content: center; /* centraliza conteúdo horizontalmente */
+    align-items: center;      /* centraliza verticalmente */
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+/* MENU CENTRALIZADO */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* FOOTER CENTRALIZADO */
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}

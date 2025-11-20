@@ -1,0 +1,163 @@
+
+
+
+
+
+
+body{
+    margin: 0;
+        background-color: #161f2c;
+        color: #fff;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    
+
+}
+
+header{
+    background-color: #161b22;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+
+}
+
+nav li {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+
+
+}
+
+nav a:hover{
+    color: cyan;
+
+}
+
+.banner{
+    text-align: center;
+    background: linear-gradient(145deg, #353536, #2e1212);
+    padding: 10px 30px;
+}
+
+img{
+ width: 180px;
+ height: 180px;
+}
+
+.cards{
+    padding: 180px 180px;
+   
+}
+
+/* ===== CARD PRINCIPAL ===== */
+    .card {
+        background-color: #353536;
+        border-radius: 15px;
+        width: 350px;
+        padding: 25px;
+        margin: 20px;
+        text-align: center;
+        position: relative;
+
+        /* Moldura simétrica */
+        border: 3px solid #00ffff; /* ciano */
+        box-shadow:
+            0 0 15px #00ffff,
+            inset 0 0 15px #00ffff;
+        transition: box-shadow 0.3s ease, transform 0.2s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.02);
+        box-shadow:
+            0 0 25px #041c7c,
+            inset 0 0 25px #14046e;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .card h2 {
+        color: rgb(0, 195, 255);
+        margin-bottom: 5px;
+    }
+
+    .card h1 {
+        margin: 10px 0;
+    }
+
+    .card p {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    /* ===== ABA EXPANSÍVEL ===== */
+    .card-inner {
+        background-color: #2a2a2b;
+        border-radius: 10px;
+        margin-top: 15px;
+        padding: 10px;
+        border: 2px solid #00ffff;
+        box-shadow: inset 0 0 10px #00ffff33;
+    }
+
+    .card-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .card-header .seta {
+        width: 35px;
+        height: 35px;
+        transition: transform 0.3s ease;
+    }
+
+    .expanded .card-header .seta {
+        transform: rotate(180deg);
+    }
+
+    .card-content {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.4s ease, opacity 0.3s ease;
+        margin-top: 0;
+    }
+
+    .expanded .card-content {
+        max-height: 300px;
+        opacity: 1;
+        margin-top: 10px;
+    }
+
+.seta{
+    display: inline-block;
+
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+  }
+
+
